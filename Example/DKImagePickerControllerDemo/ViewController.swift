@@ -52,6 +52,7 @@ class ViewController: UIViewController,
         }
         
         pickerController.didSelectAssets = { [unowned self] (assets: [DKAsset]) in
+            print("pickerController.didSelectAssets")
             self.updateAssets(assets: assets)
 		}
 		
